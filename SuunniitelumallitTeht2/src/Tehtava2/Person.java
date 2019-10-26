@@ -7,7 +7,7 @@ public class Person {
 		Shirt shirt = factory.createShirt();
 		Shoe shoe = factory.createShoe();
 		Pants pants = factory.createPants();
-		System.out.println("Jasper vaatetus on " + cap + ", " + shirt + ", " + pants + " ja " + shoe);
+		System.out.println("Jasperin vaatetus on " + cap + ", " + shirt + ", " + pants + " ja " + shoe);
 		
 	}
 
