@@ -1,9 +1,10 @@
+
 package Tehtava5;
 
 import java.util.*;
 
-public class DeckFactory {
-	private volatile static DeckFactory instance = null;
+public class Deck {
+	private volatile static Deck instance = null;
 	
 	private static String[] cards = {"Pata A", "Pata K", "Pata Q", "Pata J", "Pata 10", "Pata 9", "Pata 8", "Pata 7", "Pata 6", "Pata 5", "Pata 4", "Pata 3", "Pata 2", 
 			"Risti A", "Risti K", "Risti Q", "Risti J", "Risti 10", "Risti 9", "Risti 8", "Risti 7", "Risti 6", "Risti 5", "Risti 4", "Risti 3", "Risti 2", 
@@ -12,14 +13,14 @@ public class DeckFactory {
 	
 	private LinkedList<String> deckofcards = new LinkedList<String> (Arrays.asList(cards));
 	
-	private DeckFactory() {
+	private Deck() {
 	}
 	
-	public static DeckFactory getInstance() {
+	public static Deck getInstance() {
 		if(instance == null) {
-			synchronized(DeckFactory.class) {
+			synchronized(Deck.class) {
 				if(instance == null) {
-					instance = new DeckFactory();
+					instance = new Deck();
 					Collections.shuffle(instance.deckofcards);
 				}
 				

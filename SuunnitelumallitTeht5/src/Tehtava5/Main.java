@@ -6,13 +6,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		DeckFactory player1 = DeckFactory.getInstance();
+		Deck player1 = Deck.getInstance();
 		
 		System.out.println(player1.getDeck());
 		LinkedList<String> firsthand = player1.getCards();
 		System.out.println("Ensimmäisen pelaajan käsi: " + firsthand +  "\n");
 		
-		DeckFactory player2 = DeckFactory.getInstance();
+		Deck player2 = Deck.getInstance();
 		System.out.println(player2.getDeck());
 		LinkedList<String> secondhand = player2.getCards();
 		
