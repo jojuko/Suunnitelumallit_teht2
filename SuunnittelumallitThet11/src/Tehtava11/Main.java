@@ -7,12 +7,12 @@ public class Main {
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-		Player player = new Player();
 		Riddler edwardNigma = new Riddler();
 		
 		Runnable game = new Runnable(){
 			@Override
 			public void run() {
+				Player player = new Player();
 				player.joinGame(edwardNigma);
 				boolean truth = false;
 				while(!truth) {
