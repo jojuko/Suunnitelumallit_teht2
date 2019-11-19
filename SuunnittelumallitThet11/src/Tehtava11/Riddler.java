@@ -14,7 +14,7 @@ public class Riddler {
 	
 	public synchronized  Boolean check(Object object, int guess) {
 		Memento memento = (Memento)object;
-		if(memento.ticket == guess) {
+		if(memento.getTicket() == guess) {
 			return true;
 		}
 		else {
@@ -28,6 +28,10 @@ public class Riddler {
 		
 		public Memento(int ticket) {
 			this.ticket = ticket;
+		}
+
+		public int getTicket() {
+			return ticket;
 		}
 		
 	}

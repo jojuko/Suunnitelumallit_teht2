@@ -20,10 +20,10 @@ public class Main {
 					int guess = rand.nextInt(10)+1;
 					truth = player.check(edwardNigma, guess);
 					if(truth == false) {
-						System.out.println("Player"+ i + " guessed, " + guess + " wrong!");
+						System.out.println("Player"+ i + " guessed " + guess + ", wrong!");
 					}
 					else {
-						System.out.println("Player"+ i + " guessed, " + guess + " right!");
+						System.out.println("Player"+ i + " guessed " + guess + ", right!");
 					}
 				}
 			}
