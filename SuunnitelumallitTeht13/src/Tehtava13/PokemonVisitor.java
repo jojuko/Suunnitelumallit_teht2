@@ -27,7 +27,7 @@ public class PokemonVisitor implements Visitor{
 
 	@Override
 	public void visit(Charizard s, Pokemon pokemon) {
-		System.out.println("The final stage");
+		System.out.println("The final evolution");
 		
 	}
 
